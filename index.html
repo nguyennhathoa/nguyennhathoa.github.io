@@ -12,7 +12,7 @@
 		 background: url("https://i.imgur.com/oxsz8qw.jpg") no-repeat 0 0;
 		 background-attachment: fixed;
 		 background-size: cover;
-		 perspective: 800px;
+		 perspective: 1000px;
 	      }
          .box{
          width: 200px;
@@ -23,23 +23,23 @@
          transform: rotateX(12deg);
          animation: animate 10s linear infinite;
          }
-         li {
+         li{
          list-style: none;
          }
          .minbox {
          width: 100px;
          height: 100px;
          position: absolute;
-         left: 50px;
-         top: 50px;
+         left:50px;
+         top:50px;
          transform-style: preserve-3d;
          }
          .minbox li {
          width: 100px;
          height: 100px;
          position: absolute;
-         left: 0;
-         top: 0;
+         left:0;
+         top:0;
          background: yellow;
          animation: animate 2s ease;
          }
@@ -89,8 +89,8 @@
          width: 400px;
          height: 400px;
          position: absolute;
-         left: 0;
-         top: 0;
+         left:0;
+         top:0;
          transform-style: preserve-3d;
          }
          .maxbox li {
@@ -133,48 +133,36 @@
          width: 400px;
          height: 400px;
          opacity: 0.8;
-         left: -100px;
-         top: -100px;
          }
          .box:hover ol li:nth-child(2) {
          transform: rotateY(180deg) translateZ(300px);
          width: 400px;
          height: 400px;
          opacity: 0.8;
-         left: -100px;
-         top: -100px;
          }
          .box:hover ol li:nth-child(3) {
          transform: rotateX(-90deg) translateZ(300px);
          width: 400px;
          height: 400px;
          opacity: 0.8;
-         left: -100px;
-         top: -100px;
          }
          .box:hover ol li:nth-child(4) {
          transform: rotateX(90deg) translateZ(300px);
          width: 400px;
          height: 400px;
          opacity: 0.8;
-         left: -100px;
-         top: -100px;
          }
          .box:hover ol li:nth-child(5) {
          transform: rotateY(-90deg) translateZ(300px);
          width: 400px;
          height: 400px;
          opacity: 0.8;
-         left: -100px;
-         top: -100px;
          }
          .box:hover ol li:nth-child(6) {
          transform: rotateY(90deg) translateZ(300px);
          width: 400px;
          height: 400px;
          opacity: 0.8;
-         left: -100px;
-         top: -100px;
          }
          @keyframes animate {
          from {
