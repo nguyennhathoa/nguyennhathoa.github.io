@@ -9,10 +9,9 @@
       	      padding: 0;
 	 }
 	 body{
-		 background: url("https://i.imgur.com/oxsz8qw.jpg");
+		 background: url("https://i.imgur.com/oxsz8qw.jpg") no-repeat 0 0;
 		 background-size: cover;
-		 background-repeat: no-repeat;
-		 background-position: left top;
+		 perspective: 800px;
 	      }
          .box{
          width: 200px;
@@ -215,7 +214,10 @@
          <source src="./Audio Joiner190819092303.mp3" type="audio/mp3">
          </audio>
       </div>
-      <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+      </script>
       <script>
          var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
          if(!isChrome){
