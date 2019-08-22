@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Nguyễn Nhật Hòa</title>
-      <meta name="description" content="Hiệu ứng trình diễn ảnh 3D đẹp mắt chỉ với HTML5 và CSS3" />
-      <meta property="og:description" content="Hiệu ứng trình diễn ảnh 3D đẹp mắt chỉ với HTML5 và CSS3" />
-      <meta property="og:image" content="https://i.imgur.com/oxsz8qw.jpg" />
+<html lang="vi">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Nguyễn Nhật Hòa</title>
+  <meta name="description" content="Hiệu ứng trình diễn ảnh 3D đẹp mắt chỉ với HTML5" />
+  <meta property="og:description" content="Hiệu ứng trình diễn ảnh 3D đẹp mắt chỉ với HTML5" />
+  <meta property="og:image" content="https://i.imgur.com/oxsz8qw.jpg" />
+<script type="text/javascript" charset="utf-8">
+    function hasClassName(inElement, inClassName)
+    {
+        var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)');
+        return regExp.test(inElement.className);
+    }
+
+    function addClassName(inElement, inClassName)
+    {
+        if (!hasClassName(inElement, inClassName))
+            inElement.className = [inElement.className, inClassName].join(' ');
+    }
+
+    function removeClassName(inElement, inClassName)
+    {
+        if (hasClassName(inElement, inClassName)) {
+            var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)', 'g');
+            var curClasses = inElement.className;
+            inElement.className = curClasses.replace(regExp, ' ');
+        }
+    }
+
+    function toggleClassName(inElement, inClassName)
+    {
+        if (hasClassName(inElement, inClassName))
+            removeClassName(inElement, inClassName);
+        else
+            addClassName(inElement, inClassName);
+    }
+	</script>
       <style>
 	 *{
 	      margin: 0;
