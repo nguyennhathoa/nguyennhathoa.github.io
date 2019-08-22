@@ -3,37 +3,13 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Nguyễn Nhật Hòa</title>
-  <meta name="description" content="Hiệu ứng trình diễn ảnh 3D đẹp mắt chỉ với HTML5" />
-  <meta property="og:description" content="Hiệu ứng trình diễn ảnh 3D đẹp mắt chỉ với HTML5" />
+  <meta name="description" content="Hiệu ứng 3D Cube với HTML5" />
+  <meta property="og:description" content="Hiệu ứng 3D Cube với HTML5" />
   <meta property="og:image" content="https://i.imgur.com/oxsz8qw.jpg" />
 <script type="text/javascript" charset="utf-8">
-    function hasClassName(inElement, inClassName)
+   function downloadLink()
     {
-        var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)');
-        return regExp.test(inElement.className);
-    }
-
-    function addClassName(inElement, inClassName)
-    {
-        if (!hasClassName(inElement, inClassName))
-            inElement.className = [inElement.className, inClassName].join(' ');
-    }
-
-    function removeClassName(inElement, inClassName)
-    {
-        if (hasClassName(inElement, inClassName)) {
-            var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)', 'g');
-            var curClasses = inElement.className;
-            inElement.className = curClasses.replace(regExp, ' ');
-        }
-    }
-
-    function toggleClassName(inElement, inClassName)
-    {
-        if (hasClassName(inElement, inClassName))
-            removeClassName(inElement, inClassName);
-        else
-            addClassName(inElement, inClassName);
+      location.href = 'https://www.facebook.com/nhquyet';
     }
 	</script>
       <style>
@@ -252,11 +228,12 @@
             <li></li>
             <li></li>
          </ol>
-     <div>
-         <audio 
-            src="./Audio Joiner190819092303.mp3" type="audio/mpeg" autoplay loop>
-         </audio>
-      </div>
+	<div class="panel">
+    <div class="audio"><audio controls autoplay loop><source src="Audio Joiner190819092303.mp3" type="audio/mpeg"></audio></div>
+    <div class="author"><button onclick="downloadLink()">&copy; Nguyễn Nhật Hòa</button></div>
+	<div class="clear"></div>
+  </div>
+     
 	     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous">
