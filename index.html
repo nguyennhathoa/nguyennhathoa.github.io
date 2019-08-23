@@ -64,8 +64,13 @@
 	 margin: 300px auto;
          position: relative;
          transform-style: preserve-3d;
-         transform: rotateX(12deg);
-         animation: animate 10s linear infinite;
+	 transform: rotateX(15deg) rotateY(15deg);
+         -webkit-animation-name: rotate-cube; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 24s; /* Safari 4.0 - 8.0 */
+    animation-name: rotate-cube;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
          }
          li{
          list-style: none;
@@ -238,6 +243,13 @@
          transform: rotateX(360deg) rotateY(360deg);
          }
          }
+	      @keyframes rotate-cube{
+    0% { transform: rotateX(15deg) rotateY(-15deg) rotateZ(0deg);}
+    40% { transform: rotateX(15deg) rotateY(345deg) rotateZ(0deg);}
+    50% { transform: rotateX(105deg) rotateY(345deg) rotateZ(0deg);}
+    90% { transform: rotateX(105deg) rotateY(345deg) rotateZ(1turn);}
+    100% { transform: rotateX(15deg) rotateY(345deg) rotateZ(1turn);}
+}
       </style>
       <script>
          window.onload = function() {
