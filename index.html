@@ -8,9 +8,9 @@
   <meta property="og:description" content="Hiệu ứng 3D Cube với HTML5" />
   <meta property="og:image" content="https://i.imgur.com/oxsz8qw.jpg" />
   <link href="https://www.jqueryscript.net/demo/Simple-Falling-Snow-Effect-with-jQuery-CSS3-let-it-snow/let-it-snow.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
  <script src="https://www.jqueryscript.net/demo/Simple-Falling-Snow-Effect-with-jQuery-CSS3-let-it-snow/let-it-snow.min.js"></script>
-<script type="text/javascript" charset="utf-8">
    function downloadLink()
     {
       location.href = 'https://www.facebook.com/nhathoa2409';
@@ -290,6 +290,23 @@
             <li></li>
          </ol>
 	 </div>
+	   <script>
+       $.letItSnow('.let-it-snow', {
+   stickyFlakes: 'lis-flake--js',
+   makeFlakes: true,
+   sticky: true
+});
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-36251023-1']);
+_gaq.push(['_setDomainName', 'jqueryscript.net']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+   </script>
       <script>
          var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
          if(!isChrome){
