@@ -12,7 +12,40 @@
     {
       location.href = 'https://www.facebook.com/nhathoa2409';
     }
+	   function hasClassName(inElement, inClassName)
+    {
+        var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)');
+        return regExp.test(inElement.className);
+    }
+
+    function addClassName(inElement, inClassName)
+    {
+        if (!hasClassName(inElement, inClassName))
+            inElement.className = [inElement.className, inClassName].join(' ');
+    }
+
+    function removeClassName(inElement, inClassName)
+    {
+        if (hasClassName(inElement, inClassName)) {
+            var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)', 'g');
+            var curClasses = inElement.className;
+            inElement.className = curClasses.replace(regExp, ' ');
+        }
+    }
+
+    function toggleClassName(inElement, inClassName)
+    {
+        if (hasClassName(inElement, inClassName))
+            removeClassName(inElement, inClassName);
+        else
+            addClassName(inElement, inClassName);
+    }
 	</script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+      </script>
+	<script type="text/javascript" src="snow.js"></script>
       <style>
 	 
 	 body{
@@ -282,10 +315,6 @@
             <li></li>
          </ol>
 	 </div>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
-      </script>
       <script>
          var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
          if(!isChrome){
